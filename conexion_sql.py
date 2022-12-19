@@ -550,10 +550,8 @@ Ingrese la ID del usuario:""")
                         cur.execute(consultDeta)
                         print()
                         T=cur.fetchall()
-                        #print(T)
                         print(str(T[0][0])+" - "+str(Lista_Detalle[j]["Cantidad"])+" - $"+str(Lista_Detalle[j]["Precio Tot"]))
-#                    print()
-#                    print("Precio Total de la lista: $"+str(Total))
+
                     conect.close()
                 elif(respuesta==3):
                     AO = True
